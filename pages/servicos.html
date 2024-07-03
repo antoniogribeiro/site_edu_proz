@@ -1,46 +1,72 @@
 <!DOCTYPE html>
-<html lang="pt-BR">
-
+<html lang="pt">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educação Inclusiva</title>
-  <link rel="shortcut icon" href="./src/imagens/logo_edu.png" type="image/x-icon" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="/src/imagens/logo_edu.png" type="image/x-icon" />
 </head>
-
 <body>
-  <header class="nave_bar">
-    <div class="logo">
-      <img src="/src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
-    </div>
-    <nav>
-      <ul class="menu">
-        <li><a href="../index.html">Home</a></li>
-        <li><a href="./sobre.html">Sobre</a></li>
-        <li><a href="./servicos.html">Serviços</a></li>
-        <li><a href="./recursos.html">Recursos</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-
-  <h1>Serviços</h1>
-
-  <footer>
-    <img class="triangulo_azul" src="./src/imagens/triangulo_azul.png">
-  </footer>
-
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
-    </div>
+  <!-- Barra de Navegação -->
+  <div class="logo">
+    <img src="/src/imagens/logo_edu.png" alt="Logo Educação Inclusiva"/>
   </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+  
+  <nav>
+      <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="sobre.html">Sobre</a></li>
+          <li><a href="servicos.html">Serviços</a></li>
+          <li><a href="recursos.html">Recursos</a></li>
+          <li><a href="contato.html">Contato</a></li>
+      </ul>
+  </nav>
+
+  <!-- Área de Conteúdo Principal -->
+  <main>
+
+      <!-- Título da Seção de Serviços -->
+      <header>
+          <h1>Serviços</h1>
+          <!-- Texto introdutório -->
+          <p>Graças à nossa parceria, podemos oferecer diversos serviços para que sua instituição entregue o melhor.</p>
+      </header>
+
+      <!-- Seção de Serviços de Tecnologia -->
+      <section id="tecnologia">
+          <!-- Ícone representando serviços de tecnologia -->
+          <img src="/src/imagens/bola_tecnologia.png" alt="Ícone de tecnologia">
+          <!-- Título dos Serviços de Tecnologia -->
+          <h2>Tecnologia</h2>
+          <!-- Descrição dos serviços de tecnologia -->
+          <p>Softwares de reconhecimento de voz, teclados alternativos, mouses adaptados, tablets com aplicativos de comunicação, dispositivos de geração de voz para alunos não verbais, leitores de tela, lupas eletrônicas, software de ampliação de texto, aparelhos auditivos, sistemas de amplificação de som, legendas em tempo real para vídeos.</p>
+          <img class="bottum_play_tecnologia" src="/src/imagens/botao_play.png">
+        </section>
+
+      <!-- Seção de Espaço Físico -->
+      <section id="espaco-fisico">
+          <!-- Ícone representando serviços de espaço físico -->
+          <img src="/src/imagens/bola_fisico.png" alt="Ícone de espaço físico">
+          <!-- Título dos Serviços de Espaço Físico -->
+          <h2>Espaço Físico</h2>
+          <!-- Descrição dos serviços de espaço físico -->
+          <p>Acessibilidade dos Edifícios, Rampas de acesso com inclinação adequada, Portas automáticas ou de fácil abertura, Corredores largos e desobstruídos, Salas de Aula Adaptadas, Espaço suficiente para movimentação de cadeirantes, Instalações Sanitárias Acessíveis, Barras de apoio em banheiros, Pias a uma altura acessível com torneiras de fácil manuseio, Refeitórios com espaçamento adequado entre mesas e cadeiras, Balcões e estações de serviço a alturas acessíveis, Sinalização e Orientação, Sinais em braille e táteis em portas e corredores, Salas multifuncionais com design flexível.</p>
+          <img class="bottum_play_fisico" src="/src/imagens/botao_play.png">
+      </section>
+
+      <!-- Seção de Capacitação -->
+      <section id="capacitacao">
+          <!-- Ícone representando serviços de capacitação -->
+          <img src="/src/imagens/bola_capacit.png" alt="Ícone de capacitação">
+          <!-- Título dos Serviços de Capacitação -->
+          <h2>Capacitação</h2>
+          <!-- Descrição dos serviços de capacitação -->
+          <p>Softwares de reconhecimento de voz, teclados alternativos, mouses adaptados, tablets com aplicativos de comunicação, dispositivos de geração de voz para alunos não verbais, leitores de tela, lupas eletrônicas, software de ampliação de texto, aparelhos auditivos, sistemas de amplificação de som, legendas em tempo real para vídeos.</p>
+          <img class="bottum_play_capacitacao" src="/src/imagens/botao_play.png">
+      </section>
+
+  </main>
 
 </body>
-
 </html>

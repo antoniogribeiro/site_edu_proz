@@ -9,11 +9,13 @@
 </head>
 
 <body>
-  <header class="nave_bar">
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header>
     <div class="logo">
-      <img src="/src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+      <img src="/src/imagens/logo_edu.png" alt="Logo Educação Inclusiva"/>
     </div>
     <nav>
+      <!-- Menu de navegação -->
       <ul class="menu">
         <li><a href="../index.html">Home</a></li>
         <li><a href="./sobre.html">Sobre</a></li>
@@ -23,12 +25,38 @@
       </ul>
     </nav>
   </header>
-  <h1>Sobre</h1>
 
-  <footer>
-    <img class="triangulo_azul" src="./src/imagens/triangulo_azul.png">
-  </footer>
+  <!-- Conteúdo principal da página -->
+  <main>
+    <section class="banner_sobre">
+      <img src="/src/imagens/banner_inclusao_sobre.png"/>
+    </section>
+    <section class="bolas_verdes_sobre">
+      <img src="/src/imagens/bolas_verdes_sobre.png">
+    </section>
+    <section class="conteudo">
+      <h1>Quem somos</h1>
+      <p>Somos uma organização dedicada a promover a educação inclusiva, onde cada indivíduo, independentemente de suas habilidades ou necessidades, tem acesso igualitário a oportunidades educacionais de qualidade. Acreditamos que a educação é a chave para transformar vidas e construir uma sociedade mais justa e inclusiva. Nossa missão é derrubar barreiras e criar um ambiente acolhedor e acessível para todos os estudantes, proporcionando recursos, suporte e programas que atendam às diversas necessidades da comunidade.</p>
+     
+      <!-- Botão de contato -->
+      <a href="#" class="button">Contato</a>
+      <!-- Ícones de redes sociais -->
+      <div class="rede-social">
+        <a href="#"><img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" alt="X" width="30"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30"></a>
+        <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30"></a>
+      </div>
+      <!-- Elementos decorativos -->
+      <section class="triangulo_azul_sobre">
+        <img src="/src/imagens/triangulo_azul_sobre.png"/>
+      </section>
 
+      <section class="quadrado_vermelho_sobre">
+        <img src="/src/imagens/quadrado_verm_sobre.png">
+      </section>
+  </main>
+
+  <!-- Plugin VLibras para acessibilidade -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>

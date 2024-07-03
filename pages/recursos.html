@@ -9,6 +9,7 @@
 </head>
 
 <body>
+  <!-- Cabeçalho com logo e menu de navegação -->
   <header class="nave_bar">
     <div class="logo">
       <img src="/src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
@@ -24,34 +25,39 @@
     </nav>
   </header>
 
-  <h1>Recursos</h1>
+  <!-- Conteúdo principal da página -->
+  <main>
+    <h1>Recursos</h1>
 
-  <section class="banner">
-    <img src="/src/imagens/banner_recursos.PNG" alt="Imagem de destaque">
-  </section>
+    <!-- Seção de banner -->
+    <section class="banner">
+      <img src="/src/imagens/banner_recursos.PNG" alt="Imagem de destaque">
+    </section>
 
-  <section class="recursos">
-    <div class="recurso">
+    <!-- Seção de recursos -->
+    <section class="recursos">
+      <article class="recurso">
         <img src="/src/imagens/img_semana_educacao.PNG" alt="Imagem informativa semana da educação inclusiva">
-    </div>
-    <div class="recurso">
+      </article>
+      <article class="recurso">
         <img src="/src/imagens/img_diversidade.PNG" alt="I Encontro sobre Diversidade e Seminário sobre Educação Inclusiva">
-    </div>
-    <div class="recurso">
+      </article>
+      <article class="recurso">
         <img src="/src/imagens/img_curso_online.PNG" alt="Imagem sobre curso de educação Inclusiva">
-        <p></p>
-    </div>
-    <div class="recurso">
-        <img src="/src/imagens/img_workshop.PNG" alt="Educação Especial em Debate">
-    </div>
-  </section>
+      </article>
+      <article class="recurso">
+        <img src="/src/imagens/img_workshop.PNG" alt="Imagem com o tema Educação Especial em Debate">
+      </article>
+    </section>
+  </main>
 
+  <!-- Rodapé com elementos decorativos -->
   <footer>
-    <img class="triangulo_azul" src="/src/imagens/triangulo_azul.png" alt="Imagem de um triangulo na cor azul">
-    <img class="triangulo_azul" src="/src/imagens/quadrado_vermelho_p.png" alt="Imagem de um quadrado pequeno na cor vermelha">
-    <img class="triangulo_azul" src="/src/imagens/quadrado_vermelho_g.png" alt="Imagem de um quadrado grande na cor vermelha">
+    <img src="/src/imagens/triangulo_azul_recursos.png"/>
+    <img src="/src/imagens/quadrados_vermelhos_recursos.png"/>
   </footer>
 
+  <!-- Plugin VLibras para acessibilidade -->
   <div vw class="enabled">
     <div vw-access-button class="active"></div>
     <div vw-plugin-wrapper>
@@ -64,5 +70,4 @@
   </script>
 
 </body>
-
 </html>
