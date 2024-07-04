@@ -1,16 +1,23 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
+    <!-- Definição do conjunto de caracteres e viewport para responsividade -->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Educação Inclusiva</title>
-    <link rel="shortcut icon" href="./src/imagens/logo_edu.png" type="image/x-icon"/>
+    <!-- Ícone da página -->
+    <link rel="shortcut icon" href="./src/imagens/logo_edu.png" type="image/x-icon" />
 </head>
+
 <body>
+    <!-- Cabeçalho da página -->
     <header class="nave_bar">
         <div class="logo">
-            <img src="./src/imagens/logo_edu.png" alt="Logo Educação Inclusiva"/>
+            <!-- Logo da Educação Inclusiva -->
+            <img src="./src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
         </div>
+        <!-- Menu de navegação -->
         <nav>
             <ul class="menu">
                 <li><a href="./">Home</a></li>
@@ -19,34 +26,44 @@
                 <li><a href="./pages/recursos.html">Recursos</a></li>
                 <li><a href="./pages/contato.html">Contato</a></li>
             </ul>
-        </nav>     
+        </nav>
     </header>
+
+    <!-- Seção principal de informações -->
     <main class="informacoes">
         <div class="titulo">
             <h1>
-                Construímos um futuro
-inclusivo e igualitário
+                <!-- Título principal -->
+                Construímos um futuro inclusivo e igualitário
             </h1>
-        <div class="subtitulo">
-            <h3>
-            Estamos comprometidos em criar ambientes de aprendizagem que promovam a inclusão e a igualdade, oferecendo soluções personalizadas que capacitam cada aluno a alcançar seus objetivos.
-            </h3>
+            <div class="subtitulo">
+                <h3>
+                    <!-- Subtítulo explicativo -->
+                    Estamos comprometidos em criar ambientes de aprendizagem que promovam a inclusão e a igualdade,
+                    oferecendo soluções personalizadas que capacitam cada aluno a alcançar seus objetivos.
+                </h3>
+            </div>
+            <!-- Imagem de fundo e elementos gráficos -->
+            <img class="imagem-fundo" src="./src/imagens/img_fundo_home.png"
+                alt="Imagem representando a educação inclusiva">
+            <img class="bola_verde_p" src="./src/imagens/bola_verde_p.png">
+            <img class="bola_verde_p" src="./src/imagens/bola_verde_g.png">
+            <img class="quadrado_vermelho_g" src="./src/imagens/quadrado_vermelho_g.png">
+            <img class="quadrado_vermelho_p" src="./src/imagens/quadrado_vermelho_p.png">
         </div>
-        <img class="imagem-fundo" src="./src/imagens/img_fundo_home.png" alt="Imagem representando a educação inclusiva">
-        <img class="bola_verde_p" src="./src/imagens/bola_verde_p.png">
-        <img class="bola_verde_p" src="./src/imagens/bola_verde_g.png">
-        <img class="quadrado_vermelho_g" src="./src/imagens/quadrado_vermelho_g.png">
-        <img class="quadrado_vermelho_p" src="./src/imagens/quadrado_vermelho_p.png">
     </main>
 
+    <!-- Seção de informações sobre tecnologia -->
     <section class="infor_tecnologia">
         <img src="./src/imagens/logo_info_tecnologia.png">
         <h4><a>Tecnologia</a></h4>
         <h5><a>Sabemos que a tecnologia tem muito a ajudar.</a></h5>
-        <h5><a>Fornecemos dispositivos de tecnologia assistiva apropriados, como leitores de tela, amplificadores de som, e teclados alternativos</a></h5>
+        <h5><a>Fornecemos dispositivos de tecnologia assistiva apropriados, como leitores de tela, amplificadores de
+                som, e teclados alternativos</a></h5>
         <h6><a href="saiba_mais_tecnologia">Saiba mais</a></h6>
     </section>
 
+    <!-- Seção de informações sobre espaço físico -->
     <section class="infor_espaco_fisico">
         <img src="./src/imagens/logo_info_espaco.png">
         <h4><a>Espaço Físico</a></h4>
@@ -55,26 +72,34 @@ inclusivo e igualitário
         <h6><a href="saiba_mais_espaco_fisico">Saiba mais</a></h6>
     </section>
 
+    <!-- Seção de informações sobre capacitação -->
     <section class="infor_capacitacao">
         <img src="./src/imagens/logo_info_capacit.png">
         <h4><a>Capacitação</a></h4>
         <h5><a>Da sala de aula aos portões...</a></h5>
-        <h5><a>Disponibilizamos mentoria contínua para todos os profissionais quem atuam nas escolas, desde professores a vigilantes.</a></h5>
+        <h5><a>Disponibilizamos mentoria contínua para todos os profissionais quem atuam nas escolas, desde professores
+                a vigilantes.</a></h5>
         <h6><a href="saiba_mais_capacitacao">Saiba mais</a></h6>
     </section>
-<footer>
-    <img class="triangulo_azul" src="./src/imagens/triangulo_azul.png">
-</footer>
 
-<div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!-- Rodapé da página -->
+    <footer>
+        <img class="triangulo_azul" src="./src/imagens/triangulo_azul.png">
+    </footer>
+
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        // Inicialização do widget VLibras
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
+
 </html>
