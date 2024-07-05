@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- reset do CSS  -->
+  <!-- Titulo do da página -->
+  <title>Educação Inclusiva</title>
+  <!-- Icone da aba -->
+  <link rel="shortcut icon" href="../src/imagens/logo_edu.png" type="image/x-icon" />
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+  <!-- Cabeçalho com logo e menu de navegação -->
+  <header class="nave_bar">
+      <img src="../imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+    <nav>
+      <ul class="menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./servicos.html">Serviços</a></li>
+        <li><a href="./recursos.html"><strong>Recursos</strong></a></li>
+        <li><a href="./contato.html">Contato</a></li>
+      </ul>
+    </nav>
+  </header>
+  <div class="container">
+
+    <!-- Conteúdo principal da página -->
+    <main>
+      <!--<h1>Recursos</h1>-->
+
+      <!-- Seção de banner -->
+      <section class="banner">
+        <img src="../src/imagens/banner_recursos.PNG" alt="Imagem de destaque">
+      </section>
+
+      <!-- Seção de recursos -->
+      <section class="recursos">
+        <article class="recurso">
+          <img src="../../src/imagens/img_semana_educacao.PNG" alt="Imagem informativa semana da educação inclusiva">
+        </article>
+        <article class="recurso-meio">
+          <img src="../../src/imagens/img_diversidade.PNG"
+            alt="I Encontro sobre Diversidade e Seminário sobre Educação Inclusiva">
+        </article>
+        <article class="recurso">
+          <img src="../../src/imagens/img_curso_online.PNG" alt="Imagem sobre curso de educação Inclusiva">
+        </article>
+        <article class="recurso-meio">
+          <img src="../../src/imagens/img_workshop.PNG" alt="Imagem com o tema Educação Especial em Debate">
+        </article>
+      </section>
+    </main>
+
+    <!-- Rodapé com elementos decorativos -->
+    <footer>
+      <img src="../src/imagens/triangulo_azul_recursos.png">
+      <img src="../src/imagens/quadrados_vermelhos_recursos.png">
+    </footer>
+
+    
+  </div>
+
+  <!-- Plugin VLibras para acessibilidade -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div>
+  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+  <script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+
+</body>
+
+</html>
