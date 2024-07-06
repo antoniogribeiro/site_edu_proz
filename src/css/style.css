@@ -41,6 +41,35 @@ header nav li a:hover {
   color: #ffffffd9;
 }
 
+#formas-bg-triangulo{
+  position: relative;
+  z-index: -99;
+  top: 500px;
+  left: 1200px;
+  width: auto;
+  height: 200px;
+}
+
+
+#formas-bg-circulo{
+  position: relative;
+  margin: 0;
+  z-index: -99;
+  top: 50px;
+  left: -200px;
+  width: auto;
+  height: 200px;
+}
+
+#formas-bg-quadrado{
+  position: relative;
+  z-index: 1;
+  top: 50px;
+  left: 800px;
+  width: auto;
+  height: 150px;
+}
+
 .container {
   display: flex;
   max-width: 1440px;
