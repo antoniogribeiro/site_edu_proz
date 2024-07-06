@@ -70,7 +70,7 @@ main img {
 .cartoes-info {
   display: flex;
   flex-direction: row;
-  margin-top: 70px;
+  margin-block: 70px;
   justify-content: space-evenly;
 }
 .cartao-info {
@@ -107,5 +107,18 @@ main img {
   color: #442bdc;
   text-decoration: none;
 
+}
+
+footer{
+  display: flex;
+  background-color: #392020;
+  width: 100%;
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+}
+
+footer p {
+  color: #ffffffb4;
 }
 
