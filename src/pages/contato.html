@@ -1,116 +1,137 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+  <head>
+    <!-- Definição do conjunto de caracteres e viewport -->
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contato</title>
+    <!-- Ícone da página -->
+    <link
+      rel="shortcut icon"
+      href="../src/imagens/logo_edu.png"
+      type="image/x-icon"
+    />
+    <link rel="stylesheet" href="../../src/css/contatos.css" />
+  </head>
 
-<head>
-  <!-- Definição do conjunto de caracteres e viewport -->
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contato</title>
-  <!-- Ícone da página -->
-  <link rel="shortcut icon" href="../src/imagens/logo_edu.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../../src/css/style.css">
-
-</head>
-
-<body>
-  <!-- Cabeçalho da página -->
-  <header class="nave_bar">
-    <!-- Logo da empresa -->
-    <img src="../../src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
-    <!-- Menu de navegação -->
-    <nav>
-      <ul class="menu">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="./sobre.html">Sobre</a></li>
-        <li><a href="./servicos.html">Serviços</a></li>
-        <li><a href="./recursos.html">Recursos</a></li>
-        <li><a href="./contato.html"><strong>Contato</strong></a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-
-    <main>
-      <!-- Seção de formulário de contato -->
-      <section>
-        <p>
-        <h1>
-          Contate-nos
-        </h1>
-        </p>
-      </section>
-      <section>
-        <form action="#" method="post">
-          <!-- Campo Nome -->
-          <label for="nome">Nome:</label>
-          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" /><br /><br />
-
-          <!-- Campo E-mail -->
-          <label for="email">E-mail:</label>
-          <input type="email" id="email" name="email" placeholder="Digite seu e-mail" /><br /><br />
-
-          <!-- Campo Mensagem -->
-          <label for="mensagem">Mensagem:</label><br />
-          <textarea id="mensagem" name="mensagem" placeholder="Digite aqui a mensagem"></textarea><br /><br />
-
-          <!-- Checkbox de aceitação dos termos -->
-          <input type="checkbox" id="terms" name="terms" />
-          <label for="terms">Eu aceito os Termos de Serviço</label><br /><br />
-
-          <!-- Botão Enviar -->
-          <button type="submit">ENVIAR</button>
-        </form>
-      </section>
-
-      <!-- Seção de redes sociais e contato adicional -->
-      <section>
-        <h2>
-          Visite também as nossas redes sociais, ou se preferir entre em contato
-          através do nosso Whatsapp.
-        </h2>
-        <ul>
-          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-              width="30"></a>
-          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-              alt="Facebook" width="30"></a>
-          <a href="#"><img
-              src="https://img.freepik.com/vetores-premium/icone-do-aplicativo-linkedin-a-maior-rede-profissional-do-mundo-redes-sociais-empregos-e-carreiras_277909-476.jpg"
-              alt="LinkedIn" width="30"></a>
-          <a href="#"><img
-              src="https://t3.ftcdn.net/jpg/04/74/05/94/360_F_474059464_qldYuzxaUWEwNTtYBJ44VN89ARuFktHW.jpg"
-              alt="Facebook" width="40"></a>
+  <body>
+    <!-- Cabeçalho da página -->
+    <header class="nave_bar">
+      <!-- Logo da empresa -->
+      <img src="../../src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+      <!-- Menu de navegação -->
+      <nav>
+        <ul class="menu">
+          <li><a href="../../index.html">Home</a></li>
+          <li><a href="./sobre.html">Sobre</a></li>
+          <li><a href="./servicos.html">Serviços</a></li>
+          <li><a href="./recursos.html">Recursos</a></li>
+          <li>
+            <a href="./contato.html"><strong>Contato</strong></a>
+          </li>
         </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <main>
+        <h1>Fale conosco</h1>
+          <!-- Seção de formulário de contato -->
+          <section class="formulário">
+            <form action="#" method="post">
+              <!-- Campo Nome -->
+              <label for="nome">Nome:</label>
+              <input
+                type="text"
+                id="nome"
+                name="nome"
+                placeholder="Digite seu nome"
+              /><br /><br />
+              <!-- Campo E-mail -->
+              <label for="email">E-mail:</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Digite seu e-mail"
+              /><br /><br />
+              <!-- Campo Mensagem -->
+              <label for="mensagem">Mensagem:</label><br />
+              <textarea
+                id="mensagem"
+                name="mensagem"
+                placeholder="Digite aqui a mensagem"
+              ></textarea
+              ><br /><br />
+              <!-- Checkbox de aceitação dos termos -->
+              <input type="checkbox" id="terms" name="terms" />
+              <label for="terms">Eu aceito os Termos de Serviço</label
+              ><br /><br />
 
-        <!-- Informações de contato telefônico -->
-        <h3>Ligue para nós</h3>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSkZh1jcJdPlyrzT9iaKHr63-abSgDkfN7jgQ&s"
-          alt="Whatsapp" width="30" />
-        <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
-      </section>
-    </main>
+              <!-- Botão Enviar -->
+              <button type="submit">ENVIAR</button>
+            </form>
+          </section>
+          <!-- Seção de redes sociais e contato adicional -->
+          <section class="rede_social">
+            <h3>
+              Visite também as nossas redes sociais, ou se preferir entre em
+              contato através do nosso Whatsapp.
+            </h3>
+            <ul>
+              <a href="#"
+                ><img
+                  src="/site_edu_proz/src/imagens/img_intagran.png"
+                  alt="Instagram"
+                  width="30"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/site_edu_proz/src/imagens/img_facebook.png"
+                  alt="Facebook"
+                  width="30"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/site_edu_proz/src/imagens/img_linkedIn.png"
+                  alt="LinkedIn"
+                  width="30"
+              /></a>
+              <a href="#"
+                ><img
+                  src="/site_edu_proz/src/imagens/img_youtube.png"
+                  alt="Youtube"
+                  width="40"
+              /></a>
+            </ul>
 
+            <!-- Informações de contato telefônico -->
+            <h3>Ligue para nós</h3>
+            <img
+              src="/site_edu_proz/src/imagens/img_watsapp.png"
+              alt="Whatsapp"
+              width="30"
+            />
+            <a href="tel:+5511999999999">(11) 99999-9999</a>
+          </section>
+      </main>
 
-  </div>
+    <!-- Rodapé da página -->
+    <footer>
+      <p>&#169; 2024 Copyright: Projeto Proz</p>
+    </footer>
 
-  <!-- Rodapé da página -->
-  <footer>
-    <p>&#169; 2024 Copyright: Projeto Proz</p>
-  </footer>
-
-  <!-- Widget de acessibilidade VLibras -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!-- Widget de acessibilidade VLibras -->
+    <div vw class="enabled">
+      <div vw-access-button class="active"></div>
+      <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+      </div>
     </div>
-  </div>
-  <!-- Script do VLibras -->
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    // Inicialização do widget VLibras
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
-
-</body>
-
+    <!-- Script do VLibras -->
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+      // Inicialização do widget VLibras
+      new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
+  </body>
 </html>

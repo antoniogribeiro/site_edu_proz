@@ -40,14 +40,12 @@ header nav li a {
 header nav li a:hover {
   color: #ffffffd9;
 }
-
-#formas-bg-triangulo {
-  position: relative;
-  z-index: -99;
-  top: 500px;
-  left: 1200px;
-  width: auto;
-  height: 200px;
+.formulário {
+  background-color: #b7aacc;
+  margin: 10px;
+  padding: 10px;
+  width: 400px;
+  left: 500px;
 }
 
 #formas-bg-circulo {
@@ -147,8 +145,4 @@ footer {
 
 footer p {
   color: #ffffffb4;
-}
-
-div {
-  display: block;
 }
