@@ -36,12 +36,7 @@ header nav li a {
   font-size: 16px;
   margin-right: 28px;
 }
-
-header nav li a:hover {
-  color: #ffffffd9;
-}
 .formulário {
-  background-color: #b7aacc;
   margin: 10px;
   padding: 10px;
   width: 400px;
@@ -74,25 +69,46 @@ header nav li a:hover {
   flex-direction: column;
 }
 
-main {
-  display: flex;
+main ul {
   align-items: center;
   flex-direction: row;
 }
 
+main ul a {
+  margin: 0px;
+}
+
+.logos-rede-social {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
 main h1 {
   font-size: 48px;
-  margin-bottom: 37px;
+  margin-bottom: 50px;
+  margin-left: 32px;
   font-weight: 500;
-}
-main p {
-  font-size: 20px;
 }
 
 main img {
-  margin-left: 90px;
+  margin-left: 0px;
 }
 
+.contem-section {
+  display: flex;
+  justify-content: last baseline;
+  margin: 10px;
+}
+
+.rede_social {
+  padding: 40px;
+  border: 2px solid #a7c1dd;
+  width: 400px;
+  background-color: #e2dfe7;
+  padding-top: 16px;
+  align-content: space-between;
+}
 .cartoes-info {
   display: flex;
   flex-direction: row;
@@ -137,7 +153,7 @@ main img {
 footer {
   display: flex;
   background-color: #392020;
-  width: 100%;
+  width: 159%;
   height: 50px;
   justify-content: center;
   align-items: center;
@@ -145,4 +161,44 @@ footer {
 
 footer p {
   color: #ffffffb4;
+}
+
+input {
+  margin-bottom: 15px;
+  padding: 10px 0; /* Adiciona padding na parte superior e inferior */
+  border: none; /* Remove todas as bordas */
+  border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior */
+  outline: none; /* Remove o outline */
+  font-size: 16px; /* Ajusta o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+  width: 80%;
+}
+
+.checkbox {
+  width: unset;
+}
+.button-enviar {
+  width: 80%;
+  background-color: transparent;
+  border: unset;
+}
+
+.imagem_button {
+  width: 100%;
+}
+
+input:focus,
+textarea:focus {
+  border-bottom: 3px solid #007bff;
+}
+
+textarea {
+  margin-bottom: 15px;
+  padding: 10px 0; /* Adiciona padding na parte superior e inferior */
+  border: none; /* Remove todas as bordas */
+  border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior */
+  outline: none; /* Remove o outline */
+  font-size: 16px; /* Ajusta o tamanho da fonte */
+  color: #333; /* Define a cor do texto */
+  width: 80%;
 }
