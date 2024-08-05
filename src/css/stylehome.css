@@ -1,0 +1,161 @@
+
+/* Ajuste do corpo e container */
+* {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body {
+  display: flex;
+  width: auto;
+  align-items: normal;
+  flex-direction: column;
+
+  font-family: "Inter", sans-serif;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+
+}
+
+/* Estilização do cabeçalho */
+.nave_bar {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+
+.nave_bar img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Estilização do main */
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.texto-principal {
+  max-width: 50%;
+}
+
+.texto-principal h1 {
+  font-size: 2.5em;
+  color: #333;
+  text-align: center;
+}
+
+.texto-principal p {
+  font-size: 1.2em;
+  color: #666;
+  text-align: center;
+}
+
+.imagem-fundo {
+  max-width: 40%;
+  height: auto;
+}
+
+/* Estilização das formas */
+#formas-bg-circulo {
+  position: absolute;
+  top: 100%;
+  left: -5%;
+  width: 150px;
+}
+
+#formas-bg-quadrado {
+  position: absolute;
+  top: 130%;
+  left: 190%;
+  width: 150px;
+  z-index: 1
+}
+
+#formas-bg-triangulo {
+  position: absolute;
+  bottom: -420%;
+  right: -106%;
+  width: 100px;
+  z-index: 1
+}
+
+/* Estilização dos cartões de informação */
+.cartoes-info {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 50px;
+}
+
+.cartao-info {
+  background-color: #f5f5f5;
+  padding: 40px;
+  border-radius: 10px;
+  max-width: 25%;
+  text-align: center;
+}
+
+.cartao-info img {
+  padding: 10px;
+  height: 50px;
+}
+
+.cartao-info h2 {
+  padding: 10px;
+  color: #333;
+}
+
+.cartao-info p {
+  padding: 10px;
+  color: #666;
+}
+
+button a {
+  text-decoration: none;
+  color: #6200ea;
+  margin-top: auto;
+}
+
+/* Estilização do rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6200ea;
+  color: white;
+  margin-top: 0;
+}
+
+
+/* Plugin VLibras */
+[vw] {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 9999;
+}
+

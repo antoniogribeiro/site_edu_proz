@@ -1,0 +1,171 @@
+/* CSS específico para a página Recursos */
+
+/* Reset básico do CSS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  margin: 0;
+  padding: 0;
+  color: #333;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1920px;
+  margin: 0 auto;
+  padding: 20px;
+  position: relative;
+  overflow: hidden;
+}
+
+/* Estilização do cabeçalho */
+.nave_bar {
+  background-color: #6200ea;
+  color: white;
+  padding: 10px 40px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nave_bar img {
+  height: 40px;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.menu a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s;
+}
+
+.menu a:hover {
+  color: #dddddd;
+}
+
+/* Conteúdo principal */
+main {
+  padding: 0;
+  text-align: center;
+}
+
+/* Banner no topo */
+.banner {
+  width: 100%;
+  position: relative;
+  margin-bottom: 40px;
+  
+}
+
+.banner img {
+  width: 100%;
+  height: auto; 
+  display: block;
+
+}
+
+/* Formas geométricas */
+#formas-bg-quadrado-recur {
+    position: absolute;
+    top: 85%;
+    left: 90%;
+    width: 150px;
+    transform: rotate(90deg);
+    z-index: 1
+}
+
+#formas-bg-triangulo-recur {
+    position: absolute;
+    top: 85%;
+    left: -5%;
+    width: 150px;
+    transform: rotate(120deg);
+    z-index: 1
+}
+
+/* Seção de recursos */
+.recursos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 40px;
+  padding: 20px;
+
+}
+
+.recurso,
+.recurso-meio {
+  flex: 1 1 200px; 
+  max-width: 220px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(255, 255, 255);
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  margin: 20px;
+  position: relative;
+  z-index: 3; 
+}
+
+.recurso img,
+.recurso-meio img {
+  width: 100%;
+  height: 100%;
+  max-height: 200px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+.recurso img:hover,
+.recurso-meio img:hover {
+  transform: scale(1.05);
+}
+  
+  #formas-bg-quadrado {
+    position: absolute;
+    top: 0%;
+    left: 10%;
+    width: 150px;
+    z-index: 1
+}
+  
+#formas-bg-triangulo {
+    position: absolute;
+    bottom: 0%;
+    right: 0%;
+    width: 100px;
+    z-index: 1
+}
+
+/* Estilização do rodapé */
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #6200ea;
+  color: white;
+  margin-top: 0px;
+}
+
+/* Plugin VLibras */
+[vw] {
+  position: fixed;
+  bottom: 0;
+  right: 20px;
+  z-index: 9999;
+}

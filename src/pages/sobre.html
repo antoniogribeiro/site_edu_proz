@@ -2,84 +2,69 @@
 <html lang="pt-BR">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Educação Inclusiva</title>
-  <link rel="shortcut icon" href="../src/imagens/logo_edu.png" type="image/x-icon" />
-  <link rel="stylesheet" href="../css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Nós - Educação Inclusiva</title>
+    <link rel="shortcut icon" href="../imagens/logo_edu.png" type="image/x-icon" />
+    <link rel="stylesheet" href="../css/stylesobre.css">
 </head>
 
-<body>
-  <header>
-    <img src="../imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
-    <nav>
-      <!-- Menu de navegação -->
-      <ul class="menu">
-        <li><a href="../../index.html">Home</a></li>
-        <li><a href="./sobre.html"><strong>Sobre</strong></a></li>
-        <li><a href="./servicos.html">Serviços</a></li>
-        <li><a href="./recursos.html">Recursos</a></li>
-        <li><a href="./contato.html">Contato</a></li>
-      </ul>
-    </nav>
-  </header>
-  <div class="container">
-    <!-- Cabeçalho com logo e menu de navegação -->
+<body class="pagina-sobre">
+    <!-- Cabeçalho -->
+    <header class="nave_bar">
+        <img src="../imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+        <nav>
+            <ul class="menu">
+                <li><a href="../../"><strong>Home</strong></a></li>
+                <li><a href="../pages/sobre.html">Sobre</a></li>
+                <li><a href="../pages/servicos.html">Serviços</a></li>
+                <li><a href="../pages/recursos.html">Recursos</a></li>
+                <li><a href="../pages/contato.html">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
 
-    <!-- Conteúdo principal da página -->
-    <main>
-      <section class="banner_sobre">
-        <img src="../imagens/banner_inclusao_sobre.png" />
-      </section>
-      <section class="bolas_verdes_sobre">
-        <img src="../imagens/bolas_verdes_sobre.png">
-      </section>
-      <section class="conteudo">
-        <h1>Quem somos</h1>
-        <p>Somos uma organização dedicada a promover a educação inclusiva, onde cada indivíduo, independentemente de
-          suas habilidades ou necessidades, tem acesso igualitário a oportunidades educacionais de qualidade.
-          Acreditamos que a educação é a chave para transformar vidas e construir uma sociedade mais justa e inclusiva.
-          Nossa missão é derrubar barreiras e criar um ambiente acolhedor e acessível para todos os estudantes,
-          proporcionando recursos, suporte e programas que atendam às diversas necessidades da comunidade.</p>
-
-        <!-- Botão de contato -->
-        <a href="#" class="button">Contato</a>
-        <!-- Ícones de redes sociais -->
-        <div class="rede-social">
-          <a href="#"><img
-              src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000"
-              alt="X" width="30"></a>
-          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram"
-              width="30"></a>
-          <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg"
-              alt="Facebook" width="30"></a>
-        </div>
-        <!-- Elementos decorativos -->
-        <section class="triangulo_azul_sobre">
-          <img src="../imagens/triangulo_azul_sobre.png" />
-        </section>
-
-        <section class="quadrado_vermelho_sobre">
-          <img src="../imagens/quadrado_verm_sobre.png">
-        </section>
-    </main>
-  </div>
-  <footer>
-    <p>&#169; 2024 Copyright: Projeto Proz</p>
-  </footer>
-
-  <!-- Plugin VLibras para acessibilidade -->
-  <div vw class="enabled">
-    <div vw-access-button class="active"></div>
-    <div vw-plugin-wrapper>
-      <div class="vw-plugin-top-wrapper"></div>
+    <!-- Container principal -->
+    <div class="container">
+        <main>
+            <!-- Texto Principal -->
+            <div class="texto-principal">
+                <h1>Quem somos...</h1>
+                <p>
+                    Na nossa empresa, acreditamos que a educação é um direito fundamental e deve ser acessível a todos,
+                    independentemente de suas habilidades ou necessidades. Junte-se a nós nessa jornada para transformar
+                    vidas e construir um futuro mais justo e inclusivo para todos.
+                </p>
+                <button class="button-sobre"><a href="../pages/contato.html">Contato</a></button>
+                <div class="social-icons">
+                    <a href="#"><img src="https://seeklogo.com/images/T/twitter-x-logo-0339F999CF-seeklogo.com.png?v=638264860180000000" alt="X" width="30"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" width="30"></a>
+                    <a href="#"><img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" width="30"></a>
+                </div>
+            </div>
+            <img class="imagem-fundo_sobre" src="../imagens/banner_inclusao_sobre.png" alt="Imagem sobre nós">
+            <img id="formas-bg-circulo-sobre" src="../imagens/circulos verdes.png" alt="Circulo Verde">
+            <img id="formas-bg-triangulo-sobre" src="../imagens/triangulos azuis.png" alt="Triângulo Azul">
+            <img id="formas-bg-quadrado-sobre" src="../imagens/quadrados vermelhos.png" alt="Quadrado Vermelho">
+        </main>
     </div>
-  </div>
-  <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-  <script>
-    new window.VLibras.Widget('https://vlibras.gov.br/app');
-  </script>
 
+    <!-- Rodapé -->
+    <footer>
+        <p>&#169; 2024 Copyright: Projeto Proz</p>
+    </footer>
+
+    <!-- Plugin VLibras -->
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+            <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+    <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+    <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+    </script>
 </body>
 
 </html>
