@@ -2,7 +2,6 @@
 
 * {
   margin: 0;
-  padding: 0;
   box-sizing: border-box;
 }
 
@@ -40,26 +39,6 @@ header nav li a {
   margin: 10px;
   padding: 10px;
   width: 400px;
-  left: 500px;
-}
-
-#formas-bg-circulo {
-  position: relative;
-  margin: 0;
-  z-index: -99;
-  top: 50px;
-  left: -200px;
-  width: auto;
-  height: 200px;
-}
-
-#formas-bg-quadrado {
-  position: relative;
-  z-index: 1;
-  top: 50px;
-  left: 800px;
-  width: auto;
-  height: 150px;
 }
 
 .container {
@@ -74,25 +53,26 @@ main ul {
   flex-direction: row;
 }
 
-main ul a {
-  margin: 0px;
-}
-
 .logos-rede-social {
   display: flex;
   justify-content: space-between;
   width: 100%;
+  margin-top: 80px;
+  margin-bottom: 50px;
+  padding-left: 10%;
 }
 
-main h1 {
-  font-size: 48px;
-  margin-bottom: 50px;
-  margin-left: 32px;
-  font-weight: 500;
+#titulo {
+  font-size: 38px;
+  margin-bottom: 10px;
+  font-weight: 700;
+  margin-top: px;
+  width: 80%;
 }
 
 main img {
   margin-left: 0px;
+  margin-top: 0px;
 }
 
 .contem-section {
@@ -102,52 +82,36 @@ main img {
 }
 
 .rede_social {
-  padding: 40px;
+  display: block;
+  padding: 20px;
   border: 2px solid #a7c1dd;
   width: 400px;
   background-color: #e2dfe7;
   padding-top: 16px;
-  align-content: space-between;
 }
-.cartoes-info {
-  display: flex;
-  flex-direction: row;
-  margin-block: 70px;
-  justify-content: space-evenly;
+
+.rede_social h3 {
+  text-align: center;
 }
-.cartao-info {
+#img-watsapp {
   display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  width: 360px;
-  height: 390;
-  margin-right: 100px;
-  align-items: center;
+  margin-left: 40%;
+  width: 15%;
+  margin-top: 10%;
+  margin-bottom: 10px;
+}
+
+.rede_social img {
+  width: 50%;
+}
+
+#numero-telefone {
+  margin-left: 30%;
 }
 
 .cartao-info img {
   width: 80px;
   margin-bottom: 20px;
-}
-
-.cartao-info h2 {
-  font-weight: 500;
-  font-size: 24px;
-}
-
-.cartao-info p {
-  margin-block: 20px;
-}
-
-.cartao-info button {
-  font-size: 16px;
-  background: transparent;
-  border: none;
-}
-.cartao-info button a {
-  font-size: 16px;
-  color: #442bdc;
-  text-decoration: none;
 }
 
 footer {
@@ -197,8 +161,8 @@ textarea {
   padding: 10px 0; /* Adiciona padding na parte superior e inferior */
   border: none; /* Remove todas as bordas */
   border-bottom: 1px solid #ccc; /* Adiciona uma borda inferior */
-  outline: none; /* Remove o outline */
+  /*outline: none; /* Remove o outline */
   font-size: 16px; /* Ajusta o tamanho da fonte */
   color: #333; /* Define a cor do texto */
-  width: 80%;
+  width: 80%; /* deixar a linha da lagura da caixa*/
 }
