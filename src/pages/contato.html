@@ -11,7 +11,9 @@
       href="../src/imagens/logo_edu.png"
       type="image/x-icon"
     />
+    <script src="/js/contatos.js" defer></script>
     <link rel="stylesheet" href="../css/stylecontato.css" />
+    <!--<link rel="stylesheet" href="/src/css/stylecontato_Respansivo.css"> -->
   </head>
 
   <body>
@@ -32,18 +34,17 @@
         </ul>
       </nav>
     </header>
-    
+
     <div class="container">
       <main>
-        <br><br>
+        <br /><br />
         <div class="contem-section">
           <!-- Seção de formulário de contato -->
           <section class="formulario">
             <h1 id="titulo">Fale Conosco</h1>
             <form action="#" method="post">
               <!-- Campo Nome -->
-              <label for="nome">Nome:</label>
-              <br>
+              <label for="nome">*Nome completo:</label> <br />
               <input
                 type="text"
                 id="nome"
@@ -52,7 +53,7 @@
               /><br /><br />
               <!-- Campo E-mail -->
               <label for="email">E-mail:</label>
-              <br>
+              <br />
               <input
                 type="email"
                 id="email"
@@ -73,8 +74,12 @@
               ><br /><br />
 
               <!-- Botão Enviar -->
-              <button class="button-enviar" type="submit">
-                <img class="imagem_button" src="../imagens/botun-enviar.png" alt="Enviar">
+              <button id="button-submit" class="button-enviar" type="submit">
+                <img
+                  class="imagem_button"
+                  src="../imagens/botun-enviar.png"
+                  alt="Enviar"
+                />
               </button>
             </form>
           </section>
@@ -116,12 +121,15 @@
             </ul>
             <!-- Informações de contato telefônico -->
             <h3>Ligue para nós</h3>
-            <img id="img-watsapp"
+            <img
+              id="img-watsapp"
               src="../imagens/img_watsapp.png"
               alt="Whatsapp"
               width="30"
             />
-            <a id="numero-telefone" href="tel:+5511999999999">(11) 99999-9999</a>
+            <a id="numero-telefone" href="tel:+5511999999999"
+              >(11) 99999-9999</a
+            >
           </section>
         </div>
       </main>

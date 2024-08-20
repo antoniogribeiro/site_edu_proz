@@ -183,3 +183,34 @@ footer {
   color: white;
   margin-top: 0;
 }
+
+/*-----Estilos dinámicos-------*/
+.required-popup::after {
+  content: 'Campo Obrigatorio';
+  position: 0;
+  top: 0;
+  right: 0;
+  color: #dfdfdf;
+  font-size: 65rem;
+  padding: 0.2rem 0.3rem;
+  width: auto;
+  display: block;
+  background-color: #202020;
+}
+
+.mobile {
+  display: none;
+  margin-left: 4rem;
+}
+
+@media (max-widh: 800) {
+  .mobile {
+    display: block;
+  }
+}
+
+@media (max-widh: 800) {
+  nav ul {
+    display: none;
+  }
+}
