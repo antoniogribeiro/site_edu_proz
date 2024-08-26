@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Contato</title>
+
     <!-- Ícone da página -->
     <link
       rel="shortcut icon"
@@ -15,12 +16,12 @@
     <link rel="stylesheet" href="../css/stylecontato.css" />
     <!--<link rel="stylesheet" href="/src/css/stylecontato_Respansivo.css"> -->
   </head>
-
   <body>
     <!-- Cabeçalho da página -->
     <header class="nave_bar">
       <!-- Logo da empresa -->
       <img src="../../src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+
       <!-- Menu de navegação -->
       <nav>
         <ul class="menu">
@@ -34,7 +35,6 @@
         </ul>
       </nav>
     </header>
-
     <div class="container">
       <main>
         <br /><br />
@@ -43,31 +43,39 @@
           <section class="formulario">
             <h1 id="titulo">Fale Conosco</h1>
             <form action="#" method="post">
-              <!-- Campo Nome -->
-              <label for="nome">*Nome completo:</label> <br />
+              <!------------------------ Campo Nome ------------------------------>
+              <label id="label_nome" for="nome">*Nome completo:</label> <br />
               <input
                 type="text"
-                id="nome"
+                id="input_nome"
                 name="nome"
                 placeholder="Digite seu nome"
-              /><br /><br />
+              />
+              <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
+              <br /><br />
+
               <!-- Campo E-mail -->
-              <label for="email">E-mail:</label>
+              <label id="label_email" for="email">E-mail:</label>
               <br />
               <input
+                id="input_email"
                 type="email"
-                id="email"
                 name="email"
                 placeholder="Digite seu e-mail"
-              /><br /><br />
+              />
+              <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
+              <br /><br />
+
               <!-- Campo Mensagem -->
               <label for="mensagem">Mensagem:</label><br />
               <textarea
                 id="mensagem"
                 name="mensagem"
                 placeholder="Digite aqui a mensagem"
-              ></textarea
-              ><br />
+              ></textarea>
+              <p id="mensagem-helper" class="helper-text">Mensagem de ajuda</p>
+              <br />
+
               <!-- Checkbox de aceitação dos termos -->
               <input class="checkbox" type="checkbox" id="terms" name="terms" />
               <label for="terms">Eu aceito os Termos de Serviço</label
@@ -83,6 +91,7 @@
               </button>
             </form>
           </section>
+
           <!-- Seção de redes sociais e contato adicional -->
           <section class="rede_social">
             <h3>
@@ -119,6 +128,7 @@
                 />
               </a>
             </ul>
+
             <!-- Informações de contato telefônico -->
             <h3>Ligue para nós</h3>
             <img
@@ -134,7 +144,6 @@
         </div>
       </main>
     </div>
-
     <footer>
       <p>&#169; 2024 Copyright: Projeto Proz</p>
     </footer>
@@ -146,6 +155,7 @@
         <div class="vw-plugin-top-wrapper"></div>
       </div>
     </div>
+
     <!-- Script do VLibras -->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
     <script>
