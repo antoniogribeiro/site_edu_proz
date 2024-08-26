@@ -1,166 +1,122 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
-  <head>
-    <!-- Definição do conjunto de caracteres e viewport -->
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Contato</title>
 
-    <!-- Ícone da página -->
-    <link
-      rel="shortcut icon"
-      href="../src/imagens/logo_edu.png"
-      type="image/x-icon"
-    />
-    <script src="/js/contatos.js" defer></script>
-    <link rel="stylesheet" href="../css/stylecontato.css" />
-    <!--<link rel="stylesheet" href="/src/css/stylecontato_Respansivo.css"> -->
-  </head>
-  <body>
-    <!-- Cabeçalho da página -->
-    <header class="nave_bar">
-      <!-- Logo da empresa -->
-      <img src="../../src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+<head>
+  <!-- Definição do conjunto de caracteres e viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contato</title>
+  <!-- Ícone da página -->
+  <link rel="shortcut icon" href="../src/imagens/logo_edu.png" type="image/x-icon" />
+  <script src="/js/contatos.js" defer></script>
+  <link rel="stylesheet" href="../css/stylecontato.css" />
+  <!--<link rel="stylesheet" href="/src/css/stylecontato_Respansivo.css"> -->
+</head>
 
-      <!-- Menu de navegação -->
-      <nav>
-        <ul class="menu">
-          <li><a href="../../index.html">Home</a></li>
-          <li><a href="./sobre.html">Sobre</a></li>
-          <li><a href="./servicos.html">Serviços</a></li>
-          <li><a href="./recursos.html">Recursos</a></li>
-          <li>
-            <a href="./contato.html"><strong>Contato</strong></a>
-          </li>
-        </ul>
-      </nav>
-    </header>
-    <div class="container">
-      <main>
-        <br /><br />
-        <div class="contem-section">
-          <!-- Seção de formulário de contato -->
-          <section class="formulario">
-            <h1 id="titulo">Fale Conosco</h1>
-            <form action="#" method="post">
-              <!------------------------ Campo Nome ------------------------------>
-              <label id="label_nome" for="nome">*Nome completo:</label> <br />
-              <input
-                type="text"
-                id="input_nome"
-                name="nome"
-                placeholder="Digite seu nome"
-              />
-              <p id="nome-helper" class="helper-text">Mensagem de ajuda</p>
-              <br /><br />
+<body>
+  <!-- Cabeçalho da página -->
+  <header class="nave_bar">
+    <!-- Logo da empresa -->
+    <img src="../../src/imagens/logo_edu.png" alt="Logo Educação Inclusiva" />
+    <!-- Menu de navegação -->
+    <nav>
+      <ul class="menu">
+        <li><a href="../../index.html">Home</a></li>
+        <li><a href="./sobre.html">Sobre</a></li>
+        <li><a href="./servicos.html">Serviços</a></li>
+        <li><a href="./recursos.html">Recursos</a></li>
+        <li>
+          <a href="./contato.html"><strong>Contato</strong></a>
+        </li>
+      </ul>
+    </nav>
+  </header>
 
-              <!-- Campo E-mail -->
-              <label id="label_email" for="email">E-mail:</label>
-              <br />
-              <input
-                id="input_email"
-                type="email"
-                name="email"
-                placeholder="Digite seu e-mail"
-              />
-              <p id="email-helper" class="helper-text">Mensagem de ajuda</p>
-              <br /><br />
+  <div class="container">
+    <main>
+      <br /><br />
+      <div class="contem-section">
+        <!-- Seção de formulário de contato -->
+        <section class="formulario">
+          <h1 id="titulo">Fale Conosco</h1>
+          <form action="#" method="post">
+            <!-- Campo Nome -->
+            <div>
+              <label for="nome">Nome completo:</label>
+              <input type="text" id="nome" name="nome" placeholder="Digite seu nome" />
+              <span class="spanErro">Campo obrigatório</span>
+            </div>
 
-              <!-- Campo Mensagem -->
+            <!-- Campo E-mail -->
+            <div>
+              <label for="email">E-mail:</label>
+              <input type="email" id="email" name="email" placeholder="Digite seu e-mail" />
+              <span class="spanErro">Campo obrigatório</span>
+            </div>
+
+            <!-- Campo Mensagem -->
+            <div>
               <label for="mensagem">Mensagem:</label><br />
-              <textarea
-                id="mensagem"
-                name="mensagem"
-                placeholder="Digite aqui a mensagem"
-              ></textarea>
-              <p id="mensagem-helper" class="helper-text">Mensagem de ajuda</p>
-              <br />
+              <textarea id="mensagem" name="mensagem" placeholder="Digite aqui a mensagem"></textarea><br />
+              <span class="spanErro">Campo obrigatório</span>
+            </div>
 
-              <!-- Checkbox de aceitação dos termos -->
-              <input class="checkbox" type="checkbox" id="terms" name="terms" />
-              <label for="terms">Eu aceito os Termos de Serviço</label
-              ><br /><br />
+            <!-- Checkbox de aceitação dos termos -->
+            <input class="checkbox" type="checkbox" id="terms" name="terms" />
+            <label for="terms">Eu aceito os Termos de Serviço</label><br /><br />
 
-              <!-- Botão Enviar -->
-              <button id="button-submit" class="button-enviar" type="submit">
-                <img
-                  class="imagem_button"
-                  src="../imagens/botun-enviar.png"
-                  alt="Enviar"
-                />
-              </button>
-            </form>
-          </section>
+            <!-- Botão Enviar -->
+            <button id="button-submit" class="button-enviar" type="submit">
+              <img class="imagem_button" src="../imagens/botun-enviar.png" alt="Enviar" />
+            </button>
+          </form>
+        </section>
+        <!-- Seção de redes sociais e contato adicional -->
+        <section class="rede_social">
+          <h3>
+            Visite também as nossas redes sociais, ou se preferir entre em
+            contato através do nosso Whatsapp.
+          </h3>
+          <ul class="logos-rede-social">
+            <a href="https://www.instagram.com/">
+              <img src="../imagens/img_intagran.png" alt="Instagram" width="30" />
+            </a>
+            <a href="https://www.facebook.com/">
+              <img src="../imagens/img_facebook.png" alt="Facebook" width="30" />
+            </a>
+            <a href="https://www.linkedin.com/home">
+              <img src="../imagens/img_linkedIn.png" alt="LinkedIn" width="30" />
+            </a>
+            <a href="https://www.Youtube.com/">
+              <img src="../imagens/img_youtube.png" alt="Youtube" width="40" />
+            </a>
+          </ul>
+          <!-- Informações de contato telefônico -->
+          <h3>Ligue para nós</h3>
+          <img id="img-watsapp" src="../imagens/img_watsapp.png" alt="Whatsapp" width="30" />
+          <a id="numero-telefone" href="tel:+5511999999999">(11) 99999-9999</a>
+        </section>
 
-          <!-- Seção de redes sociais e contato adicional -->
-          <section class="rede_social">
-            <h3>
-              Visite também as nossas redes sociais, ou se preferir entre em
-              contato através do nosso Whatsapp.
-            </h3>
-            <ul class="logos-rede-social">
-              <a href="https://www.instagram.com/">
-                <img
-                  src="../imagens/img_intagran.png"
-                  alt="Instagram"
-                  width="30"
-                />
-              </a>
-              <a href="https://www.facebook.com/">
-                <img
-                  src="../imagens/img_facebook.png"
-                  alt="Facebook"
-                  width="30"
-                />
-              </a>
-              <a href="https://www.linkedin.com/home">
-                <img
-                  src="../imagens/img_linkedIn.png"
-                  alt="LinkedIn"
-                  width="30"
-                />
-              </a>
-              <a href="https://www.Youtube.com/">
-                <img
-                  src="../imagens/img_youtube.png"
-                  alt="Youtube"
-                  width="40"
-                />
-              </a>
-            </ul>
-
-            <!-- Informações de contato telefônico -->
-            <h3>Ligue para nós</h3>
-            <img
-              id="img-watsapp"
-              src="../imagens/img_watsapp.png"
-              alt="Whatsapp"
-              width="30"
-            />
-            <a id="numero-telefone" href="tel:+5511999999999"
-              >(11) 99999-9999</a
-            >
-          </section>
-        </div>
-      </main>
-    </div>
-    <footer>
-      <p>&#169; 2024 Copyright: Projeto Proz</p>
-    </footer>
-
-    <!-- Widget de acessibilidade VLibras -->
-    <div vw class="enabled">
-      <div vw-access-button class="active"></div>
-      <div vw-plugin-wrapper>
-        <div class="vw-plugin-top-wrapper"></div>
       </div>
-    </div>
+    </main>
+  </div>
 
-    <!-- Script do VLibras -->
+  <footer>
+    <p>&#169; 2024 Copyright: Projeto Proz</p>
+  </footer>
+
+  <!-- Widget de acessibilidade VLibras -->
+  <div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+      <div class="vw-plugin-top-wrapper"></div>
+    </div>
+  </div> <!-- Script do VLibras -->
     <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
-    <script>
-      // Inicialização do widget VLibras
-      new window.VLibras.Widget('https://vlibras.gov.br/app');
-    </script>
-  </body>
+  <script>
+    // Inicialização do widget VLibras
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+  </script>
+</body>
+
 </html>

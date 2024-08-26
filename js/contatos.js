@@ -1,49 +1,55 @@
-//-----Atribuindo as variáveis do campo nome----------//
-let inputNome = document.getElementById('input_nome');
-let labelNome = document.getElementById('label_nome');
+const form = document.querySelector("form");
 
-//-----Atribuindo as variáveis do campo email----------//
-let inputEmail = document.getElementById('input_email');
-let labelEmail = document.getElementById('label_email');
+form.addEventListener("submit", (event) => {
+  event.preventDefault();
 
-// Mostrar popup de campo obrigatório
-function mostrarPopUp(input, label) {
-  input.addEventListener('focus', e => {
-    label.classList.add('campo_obri');
-  });
+  const nomeInput = document.querySelector("#nome");
+  const emailInput = document.querySelector("#email");
+  const mensagemInput = document.querySelector("#mensagem");
+  const termosCheckbox = document.querySelector("#terms");
+  const spansErro = document.querySelectorAll(".spanErro");
 
-  input.addEventListener('blur', e => {
-    label.classList.remove('campo_obri');
-  });
-}
+  nomeInput.classList.remove("invalid");
+  emailInput.classList.remove("invalid");
+  mensagemInput.classList.remove("invalid");
+  spansErro.forEach((span) => span.classList.remove("erro"));
 
-mostrarPopUp(inputNome, labelNome);
-mostrarPopUp(inputEmail, labelEmail);
+  const nome = nomeInput.value.trim();
+  const email = emailInput.value.trim();
+  const mensagem = mensagemInput.value.trim();
+  const aceitouOsTermos = termosCheckbox.checked ? "sim" : "não";
 
-// Validar valor do input
-//adicionamos um evento do tipo input ao input do username e definimos um pararametro para capturar o evento
-inputNome.addEventListener('input', e => {
-  //printamos o valor digitado no input
-  console.log(e.target.value);
-  //capturamos o valor do ipt através do value e salvamos na variavel valorIpt
-  let valotIpt = e.target.value;
-  //condicional que verifica se a quantidade de caracteres digitados no input é maior que 3
-  if (valotIpt.length < 3) {
-    //sendo menos que 3 nos removemos a classe(css) correct do elemento input do username
-    inputNome.classList.remove('correct');
-    //adicionamos a classe error ao input do username
-    inputNome.classList.add('error');
-    //alteramos o texto do elemento <p> atraves da propriedade innertext
-    usernameHelper.innerText = 'Seu username deve ter mais que 3 caracters';
-    //adicionamos a classe visible ao elemento <p> fazendo a mensagem de ajuda aparecer ao usuario
-    usernameHelper.classList.add('visible');
-    //se a quantidade de caracters digitados no input for maior que 3 cai no else
-  } else {
-    //removemos a classe error do elemento usernameInput
-    inputNome.classList.remove('error');
-    //adicionamos a classe correct ao elemento usernameinput
-    inputNome.classList.add('correct');
-    //removemos a classe visible do elemento usernameHelper
-    usernameHelper.classList.remove('visible');
+  let formValido = true;
+
+  if (nome === "") {
+    nomeInput.classList.add("invalid");
+    spansErro[0].classList.add("erro");
+    formValido = false;
+  }
+
+  const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+  if (!emailRegex.test(email)) {
+    emailInput.classList.add("invalid");
+    spansErro[1].classList.add("erro");
+    formValido = false;
+  }
+
+  if (mensagem === "") {
+    mensagemInput.classList.add("invalid");
+    spansErro[2].classList.add("erro");
+    formValido = false;
+  }
+
+  if (aceitouOsTermos === "não") {
+    alert("Aceite os termos para continuar.");
+    formValido = false;
+  }
+
+  if (formValido) {
+    console.log("Nome:", nome);
+    console.log("Email:", email);
+    console.log("Mensagem:", mensagem);
+    console.log("Aceitou os termos:", aceitouOsTermos);
+    alert("Sua mensagem foi enviada!");
   }
 });
