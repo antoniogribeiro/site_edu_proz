@@ -10,6 +10,8 @@
   <!-- Icone da aba -->
   <link rel="shortcut icon" href="../src/imagens/logo_edu.png" type="image/x-icon" />
   <link rel="stylesheet" href="../css/stylerecursos.css">
+  <script src="/js/recusros.js" defer></script>
+
 </head>
 
 <body>
@@ -37,6 +39,7 @@
         <img src="../imagens/banner-recurs.png" alt="Imagem de destaque">
       </section>
 
+
       <!-- Seção de recursos -->
       <section class="recursos">
         <article class="recurso">
@@ -58,7 +61,21 @@
     <img id="formas-bg-quadrado-recur" src="../imagens/quadrados vermelhos.png" alt="Quadrado Vermelho">
   </div>
 
+
+
   <footer>
+    <div>
+      <form action="/subscribe" method="post">
+        <h3>Assine nossa Newsletter</h3>
+        <div> <label for="email"></label>
+          <input type="email" id="email" name="email" required placeholder="Email">
+          <span class="spanErro">Campo obrigatório</span>
+        </div>
+
+        <button type="submit">Cadastrar</button>
+      </form>
+    </div>
+
     <p>&#169; 2024 Copyright: Projeto Proz</p>
   </footer>
 

@@ -66,33 +66,31 @@ main {
   width: 100%;
   position: relative;
   margin-bottom: 40px;
-  
 }
 
 .banner img {
   width: 100%;
-  height: auto; 
+  height: auto;
   display: block;
-
 }
 
 /* Formas geométricas */
 #formas-bg-quadrado-recur {
-    position: absolute;
-    top: 85%;
-    left: 90%;
-    width: 150px;
-    transform: rotate(90deg);
-    z-index: 1
+  position: absolute;
+  top: 85%;
+  left: 90%;
+  width: 150px;
+  transform: rotate(90deg);
+  z-index: 1;
 }
 
 #formas-bg-triangulo-recur {
-    position: absolute;
-    top: 85%;
-    left: -5%;
-    width: 150px;
-    transform: rotate(120deg);
-    z-index: 1
+  position: absolute;
+  top: 85%;
+  left: -5%;
+  width: 150px;
+  transform: rotate(120deg);
+  z-index: 1;
 }
 
 /* Seção de recursos */
@@ -103,12 +101,11 @@ main {
   flex-wrap: wrap;
   gap: 40px;
   padding: 20px;
-
 }
 
 .recurso,
 .recurso-meio {
-  flex: 1 1 200px; 
+  flex: 1 1 200px;
   max-width: 220px;
   display: flex;
   justify-content: center;
@@ -119,7 +116,7 @@ main {
   padding: 10px;
   margin: 20px;
   position: relative;
-  z-index: 3; 
+  z-index: 3;
 }
 
 .recurso img,
@@ -136,21 +133,21 @@ main {
 .recurso-meio img:hover {
   transform: scale(1.05);
 }
-  
-  #formas-bg-quadrado {
-    position: absolute;
-    top: 0%;
-    left: 10%;
-    width: 150px;
-    z-index: 1
+
+#formas-bg-quadrado {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 150px;
+  z-index: 1;
 }
-  
+
 #formas-bg-triangulo {
-    position: absolute;
-    bottom: 0%;
-    right: 0%;
-    width: 100px;
-    z-index: 1
+  position: absolute;
+  bottom: 0%;
+  right: 0%;
+  width: 100px;
+  z-index: 1;
 }
 
 /* Estilização do rodapé */
@@ -168,4 +165,50 @@ footer {
   bottom: 0;
   right: 20px;
   z-index: 9999;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+form label {
+  display: block;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+form input[type="email"] {
+  padding: 10px;
+  margin-bottom: 6px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 4px;
+  background-color: #007bff;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+form button:hover {
+  background-color: #0056b3;
+}
+
+.spanErro {
+  display: none;
+  margin-bottom: 10px;
+}
+
+.spanErro.erro {
+  display: block;
+  font-size: 14px;
+  color: rgb(213, 213, 213);
 }
