@@ -1,56 +1,48 @@
-
 /* Ajuste do corpo e container */
 * {
-  font-family: Arial, sans-serif;
   margin: 0;
   padding: 0;
-  position: relative;
+  box-sizing: border-box;
+  font-size: 16px;
 }
 
 body {
   display: flex;
-  width: auto;
-  align-items: normal;
+  width: 100%;
+  height: 100vh;
+  align-items: center;
   flex-direction: column;
-
   font-family: "Inter", sans-serif;
 }
 
 .container {
-  max-width: 1920px;
-  margin: 0 auto;
-  padding: 20px;
-  position: relative;
-  overflow: hidden;
-
+  max-width: 1440px;
 }
 
 /* Estilização do cabeçalho */
 .nave_bar {
-  background-color: #6200ea;
-  color: white;
-  padding: 10px 40px;
   display: flex;
-  align-items: center;
+  width: 100%;
   justify-content: space-between;
+  align-items: center;
+  background-color: #0070d5;
+  color: white;
+  padding: 10px 100px;
 }
 
-
 .nave_bar img {
-  height: 40px;
+  height: 50px;
 }
 
 .menu {
   list-style: none;
   display: flex;
   gap: 20px;
-  
 }
 
 .menu a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
 }
 
 /* Estilização do main */
@@ -61,19 +53,21 @@ main {
 }
 
 .texto-principal {
-  max-width: 50%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  max-width: 535px;
 }
 
 .texto-principal h1 {
-  font-size: 2.5em;
-  color: #333;
-  text-align: center;
+  font-size: 3rem;
+  text-align: justify;
+  margin-bottom: 25px;
 }
 
 .texto-principal p {
-  font-size: 1.2em;
-  color: #666;
-  text-align: center;
+  font-size: 1.25rem;
+  text-align: justify;
 }
 
 .imagem-fundo {
@@ -94,7 +88,7 @@ main {
   top: 130%;
   left: 190%;
   width: 150px;
-  z-index: 1
+  z-index: 1;
 }
 
 #formas-bg-triangulo {
@@ -102,7 +96,7 @@ main {
   bottom: -420%;
   right: -106%;
   width: 100px;
-  z-index: 1
+  z-index: 1;
 }
 
 /* Estilização dos cartões de informação */
@@ -113,43 +107,46 @@ main {
 }
 
 .cartao-info {
-  background-color: #f5f5f5;
-  padding: 40px;
-  border-radius: 10px;
-  max-width: 25%;
-  text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 392px;
 }
 
 .cartao-info img {
-  padding: 10px;
-  height: 50px;
+  margin-bottom: 31px;
+  height: 79px;
 }
 
 .cartao-info h2 {
-  padding: 10px;
-  color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
+  text-align: left;
+}
+
+.cartao-info span {
+  display: inline-block;
+  margin-block: 20px;
+  font-size: 1rem;
 }
 
 .cartao-info p {
-  padding: 10px;
-  color: #666;
+  font-size: 1rem;
+  text-align: left;
+  height: 100px;
+  margin-bottom: 20px;
+}
+
+button {
+  border: none;
+  background-color: transparent;
 }
 
 button a {
+  font-size: 1rem;
   text-decoration: none;
-  color: #6200ea;
-  margin-top: auto;
+  color: #0070d5;
 }
-
-/* Estilização do rodapé */
-footer {
-  text-align: center;
-  padding: 20px;
-  background-color: #6200ea;
-  color: white;
-  margin-top: 0;
-}
-
 
 /* Plugin VLibras */
 [vw] {
@@ -158,4 +155,3 @@ footer {
   right: 20px;
   z-index: 9999;
 }
-
