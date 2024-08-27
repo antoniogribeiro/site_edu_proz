@@ -16,7 +16,30 @@ body {
 }
 
 .container {
+  position: relative;
   max-width: 1440px;
+  height: 100vh;
+}
+
+/* Estilização das formas */
+#formas-bg-circulo {
+  position: absolute;
+  top: 400px;
+  left: -100px;
+  width: 150px;
+}
+#formas-bg-triangulo {
+  position: absolute;
+  top: 750px;
+  left: 1150px;
+  width: 120px;
+}
+
+#formas-bg-quadrado {
+  position: absolute;
+  top: 400px;
+  left: 1100px;
+  width: 100px;
 }
 
 /* Estilização do cabeçalho */
@@ -73,30 +96,6 @@ main {
 .imagem-fundo {
   max-width: 40%;
   height: auto;
-}
-
-/* Estilização das formas */
-#formas-bg-circulo {
-  position: absolute;
-  top: 100%;
-  left: -5%;
-  width: 150px;
-}
-
-#formas-bg-quadrado {
-  position: absolute;
-  top: 130%;
-  left: 190%;
-  width: 150px;
-  z-index: 1;
-}
-
-#formas-bg-triangulo {
-  position: absolute;
-  bottom: -420%;
-  right: -106%;
-  width: 100px;
-  z-index: 1;
 }
 
 /* Estilização dos cartões de informação */
